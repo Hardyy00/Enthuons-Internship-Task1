@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Login</title>
+  </head>
+  <body
+    class="w-[100vw] h-[100vh] bg-gradient-to-r from-indigo-500 from-5% via-sky-500 via-30% to-emerald-500 to-90% flex justify-center items-center"
+  >
+    <div
+      class="box flex flex-col sm:h-2/3 sm:w-3/4 md:h-3/4 md:w-3/4 lg:flex-row lg:h-2/3 lg:w-2/4 mx-9"
+    >
+      <div class="relative left flex-grow-0 h-full">
+        <div class="absolute top-2/4 -translate-y-1/2 text-center w-full">
+          <p
+            class="text-3xl font-bold text-gray-700 sm:text-4xl md:text-5xl opacity-80"
+          >
+            Login Page
+          </p>
+        </div>
+        <img
+          src="https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="object-cover h-full overflow-hidden"
+        />
+      </div>
+      <div class="right w-full bg-white p-4 h-full">
+        <form id="form" action="a.html" method="get" class="px-4">
+          <div class="input my-3">
+            <!-- <label for="name">Name:</label> -->
+            <input
+              type="text"
+              name="name"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 mt-5 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Name"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input my-3">
+            <!-- <label for="email">UserEmail:</label> -->
+
+            <input
+              type="email"
+              name="email"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input my-3">
+            <!-- <label for="name">Name*:</label> -->
+
+            <input
+              type="text"
+              name="age"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Age"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input my-3">
+            <!-- <label for="name">Name*:</label> -->
+
+            <input
+              type="text"
+              name="salary"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Salary"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input my-3">
+            <!-- <label for="name">Name*:</label> -->
+
+            <input
+              type="password"
+              id="pass"
+              name="password"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input my-3">
+            <!-- <label for="name">Name*:</label> -->
+
+            <input
+              type="password"
+              id="confi"
+              name="confirmPassword"
+              class="outline-none bg-none border-b-2 border-gray-300 px-1 py-2 w-full focus:border-b-blue-400 duration-100 font-semibold text-lg tracking-wider text-blue-500"
+              placeholder="Confirm Password"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="text-center">
+            <button
+              id="btn"
+              type="submit"
+              class="bg-blue-400 w-fit py-3 px-6 mt-4 rounded-3xl shadow-2xl hover:bg-gradient-to-r hover:from-bg-blue-200 hover:to-bg-blue-600 hover:scale-95 duration-100 font-bold text-white bg-gradient-to-br"
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
